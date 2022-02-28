@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    background-image: url("Group 2.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-none{
+    display: none;
+}
+
+.alert_error{
+    padding: 1%;
+    width: 800px;
+    background-color: #ec7d7d;
+    border-radius: 15px;
+    margin: 40px;
+}
+
+header{
+    position: static;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgb(175, 175, 175) 1px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 10px;
+    animation: logo 1.5s ease-in-out;
+}
+
+@keyframes logo {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+header div a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+     Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 35px;
+    background-color: darkgreen;
+    color: honeydew;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 15pt;
+    transition: all 1s ease-in-out;
+    animation: signin 1.5s ease-in-out;
+}
+
+@keyframes signin {
+   
+        0%{
+            transform: translateX(200%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }   
+
+header div a:hover{
+    background-color: green;
+    transform: translateY(-5px) translateX(5px);
+    box-shadow:  grey 10px 10px 10px 10px;
+}
+
+
+section{
+    height: 70vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#js{
+    padding: 20px;
+    border-radius: 100%;
+    animation: identifier 120s ease-in-out infinite;
+    width: 400px;
+}
+
+@keyframes identifier {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#logo{
+    margin-top: 20px;
+    font-size: 80pt;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#first_sectin_container{
+ display: flex;
+ flex-direction: row;
+ gap: 150px;   
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;      
+}
+
+.input .input_text{
+    padding: 14px 84px;
+    border-radius: 15px;
+}
+
+.button{
+    background-color: darkolivegreen;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.button:active{
+    background-color: darkgreen;
+}
+
+input:focus{
+    outline: none;
+}
+
+*{
+    cursor: pointer;
+}
